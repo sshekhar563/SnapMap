@@ -66,4 +66,4 @@ Expo will **not work** reliably on these.
 
 Any issue you encounter while setting up, ask me on Discord.
 
-My Discord Handle is mentioned in the Readme.md[README.md]
+My Discord Handle is mentioned in the Readme.md [README.md]
