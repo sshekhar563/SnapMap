@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { Alert, Button, Image, View, ActivityIndicator } from "react-native";
 import { useAuth } from "@clerk/clerk-expo";
 import Constants from "expo-constants";
-import { Alert, Button, Image, View } from "react-native";
-import Constants from "expo-constants";
-import { useAuth } from "@clerk/clerk-expo";
+
 import type { ScreenProps } from "../types";
 import UploadConfirmationStyle from "../styles/UploadConfirmationStyle";
 
