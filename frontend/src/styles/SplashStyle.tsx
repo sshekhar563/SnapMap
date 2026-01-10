@@ -49,13 +49,15 @@ const SplashStyle = StyleSheet.create({
   mainText: {
     fontSize: 40,
     fontWeight: "900",
-    fontFamily: "Montserrat",
+    fontFamily: "Semantic",
     color: "#1A1A1A",
     letterSpacing: 2,
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 13,
+    fontFamily: "Montserrat",
+    fontWeight: "500",
     color: "#5A5A5A",
     letterSpacing: 0.8,
     marginBottom: 50,

@@ -27,7 +27,7 @@ const RegisterUserStyles = StyleSheet.create({
   title: {
     fontSize: 25,
     fontWeight: "800",
-    fontFamily: "Montserrat",
+    fontFamily: "Semantic",
     color: "#1A1A1A",
     marginBottom: 12,
     textAlign: "center",
@@ -36,7 +36,8 @@ const RegisterUserStyles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 17,
-    fontWeight: 400,
+    fontWeight: "500",
+    fontFamily: "Montserrat",
     color: "#666666",
     textAlign: "center",
     lineHeight: 20,
@@ -67,7 +68,7 @@ const RegisterUserStyles = StyleSheet.create({
   label: {
     fontSize: 14,
     fontWeight: "600",
-    fontFamily: "Montserrat",
+    fontFamily: "Semantic",
     color: "#333",
     marginBottom: 8,
   },
@@ -80,6 +81,8 @@ const RegisterUserStyles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 14,
     fontSize: 15,
+    fontFamily: "Montserrat",
+    fontWeight: "500",
     color: "#333333",
     borderWidth: 0,
   },
