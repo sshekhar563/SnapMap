@@ -9,13 +9,13 @@ import {
   Image,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Ionicons, FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 import * as Location from "expo-location";
 import type { ScreenProps } from "../types";
 import { useUser } from "@clerk/clerk-expo";
 import HomeStyle from "../styles/HomeStyle";
-import PersonIcon from "../assets/icons/PersonIcon";
+import BottomNavigation from "../navigation/BottomNavigation";
 import Constants from "expo-constants";
 
 const styles = HomeStyle;
@@ -160,7 +160,7 @@ const HomeScreen = ({ navigation }: ScreenProps<"HomeScreen">) => {
               // Handle send/share action
             }}
           >
-            <Ionicons name="paper-plane-outline" size={20} color="#FFFFFF" />
+            <Ionicons name="paper-plane-outline" size={20} color="#9CA3AF" />
           </TouchableOpacity>
 
           {/* Map */}
@@ -214,41 +214,7 @@ const HomeScreen = ({ navigation }: ScreenProps<"HomeScreen">) => {
       </ScrollView>
 
       {/* Bottom Navigation */}
-<View style={styles.bottomNavWrapper}>
-  <View style={styles.bottomNav}>
-    {/* Left */}
-    <TouchableOpacity
-      style={styles.navItem}
-      onPress={() => navigation.navigate("MapScreen")}
-    >
-      <MaterialCommunityIcons
-        name="compass-outline"
-        size={26}
-        color="#9CA3AF"
-      />
-    </TouchableOpacity>
-
-    {/* Spacer for center button */}
-    <View style={{ width: 72 }} />
-
-    {/* Right */}
-    <TouchableOpacity
-      style={styles.navItem}
-      onPress={() => navigation.navigate("ProfileScreen")}
-    >
-      <PersonIcon width={26} height={26} color="#9CA3AF" />
-    </TouchableOpacity>
-  </View>
-
-  {/* Center Camera Button */}
-  <TouchableOpacity
-    style={styles.centerButton}
-    onPress={() => navigation.navigate("CameraScreen")}
-    activeOpacity={0.85}
-  >
-    <FontAwesome name="camera" size={26} color="#FFFFFF" />
-  </TouchableOpacity>
-</View>
+      <BottomNavigation />
     </SafeAreaView>
   );
 };

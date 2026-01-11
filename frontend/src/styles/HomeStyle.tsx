@@ -9,7 +9,7 @@ const HomeStyle = StyleSheet.create({
     flex: 1,
   },
   scrollContent: {
-    paddingBottom: 20,
+    paddingBottom: 100,
   },
   header: {
     flexDirection: "row",
@@ -171,7 +171,7 @@ const HomeStyle = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: "#9CA3AF",
+    backgroundColor: "#FFFFFF",
     justifyContent: "center",
     alignItems: "center",
     zIndex: 10,
@@ -180,7 +180,7 @@ const HomeStyle = StyleSheet.create({
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.2,
+    shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 4,
   },
@@ -229,75 +229,6 @@ const HomeStyle = StyleSheet.create({
     fontFamily: "Inter",
     color: "#000000",
   },
-  fab: {
-    position: "absolute",
-    bottom: 80,
-    alignSelf: "center",
-    width: 64,
-    height: 64,
-    borderRadius: 32,
-    backgroundColor: "#EF4444",
-    justifyContent: "center",
-    alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 8,
-    elevation: 8,
-    zIndex: 100,
-  },
-  bottomNav: {
-    width: "100%",
-    height: 60,
-    backgroundColor: "#FFFFFF",
-    borderRadius: 30,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingHorizontal: 36,
-  
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.15,
-    shadowRadius: 12,
-    elevation: 12,
-  },
-  
-  navItem: {
-    padding: 10,
-  },
-
-  centerButton: {
-    position: "absolute",
-    top: -28, // THIS creates the cut-out effect
-    width: 64,
-    height: 64,
-    borderRadius: 32,
-    backgroundColor: "#EF4444",
-    justifyContent: "center",
-    alignItems: "center",
-  
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.3,
-    shadowRadius: 10,
-    elevation: 16,
-  },
-
-  bottomNavWrapper: {
-    position: "absolute",
-    bottom: 16,
-    left: 16,
-    right: 16,
-    height: 72,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  
-  
 });
 
 export default HomeStyle;
